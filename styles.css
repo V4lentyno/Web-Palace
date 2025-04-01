@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --gris: rgb(161, 161, 161);
+}
+
+body{
+    font-family: "Urbanist", sans-serif;
+    background-color: rgb(218, 218, 218);
+}
+
+h1, h2{
+    font-family: "Zilla Slab", serif;
+}
+
+h1{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(161, 161, 161);
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+header img{
+    width: 130px;
+    margin-bottom: 0px;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+    margin: 0.3em;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#Tienda article{
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+#Tienda p{
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+#Tienda a{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.3em 0.5em;
+    
+}
+
+#Tienda a:hover{
+    background-color: var(--gris);
+}
+
+#Tienda img{
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+    background-color: white;
+}
+
+/* MEDIA QUERY PARA TABLET */
+
+@media all and (min-width:768px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2em;
+    }
+    header img{
+        width: 140px;
+        display: block;
+    }
+    h1{
+        font-size: 3em;
+    }
+
+    #Tienda{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #Tienda article{
+        flex: 1 0 300px; 
+        margin-bottom: 0;
+    }
+}
+
+/*MEDIA QUERY PARA ESCRITORIO*/
+
+@media all and (min-width:1200px){
+    header img{
+        width: 150px;
+    }
+}
